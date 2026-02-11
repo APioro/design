@@ -12,13 +12,13 @@ const projects = [
 
     {
         type: "text",
-        subtitle: "Identyfikacja kluczowych problemów",
-        description: "Miałam pełną swobodę w określeniu, na czym skupić projekt, więc zaczęłam od oceny istniejącego sklepu internetowego, korzystając z analizy heurystycznej i szybkich sesji z użytkownikami. Najważniejsze problemy dotyczyły nawigacji i odkrywania produktów, przejrzystości informacji o produktach i modelu zakupu oraz spójności marki. Stały się one głównymi obszarami, które priorytetowo potraktowałam w redesignie.",
+        subtitle: "Identifying Key Issues",
+        description: "I had full freedom to determine the focus of the project, so I started by evaluating the existing online store using heuristic analysis and quick user sessions. The main issues were navigation and product discovery, clarity of product and purchase information, and brand consistency. These became the priority areas in the redesign.",
     },
     {
         type: "text",
-        subtitle: "Nawigacja",
-        description: "Oryginalna nawigacja mobilna była zagracona i niespójna, łącząc artykuły, wpisy na blogu i produkty pod niejasnymi etykietami. Zredukowałam liczbę kategorii do czterech, aby stworzyć bardziej skoncentrowaną strukturę z mniejszą liczbą rozpraszaczy. Pomogło to użytkownikom szybko zrozumieć, dokąd mają iść i sprawiło, że przeglądanie było spokojniejsze i bardziej przemyślane.",
+        subtitle: "Navigation",
+        description: "The original mobile navigation was cluttered and inconsistent, combining articles, blog posts, and products under unclear labels. I reduced the number of categories to four to create a more focused structure with fewer distractions. This helped users quickly understand where to go and made browsing calmer and more intuitive.",
     },
 
     {
@@ -34,13 +34,13 @@ const projects = [
 
     {
         type: "text",
-        subtitle: "Prezentacja produktu i ceny",
-        description: "Dodałam podglądy lifestyle’owe, aby pokazać produkt w akcji i zachęcić do kliknięć. Klikalna ocena obok tytułu kieruje użytkowników szybciej do recenzji. Wyjaśniłam ceny, pokazując koszt za saszetkę, a całkowity koszt zamówienia, oferty prezentowe i szczegóły dostawy uczyniłam bardzo widocznymi — zmniejszając niespodzianki i budując zaufanie.",
+        subtitle: "Product and Pricing Presentation",
+        description: "I added lifestyle previews to show the product in use and encourage clicks. A clickable rating next to the title quickly directs users to reviews. I clarified pricing by showing the cost per sachet, and total order cost, gift offers, and delivery details were made highly visible — reducing surprises and building trust.",
     },
     {
         type: "text",
-        subtitle: "Hierarchia informacji",
-        description: "Wyzwanie polegało na tym, że strona Absolute Collagen miała mnóstwo treści, ale była przytłaczająca i trudna w nawigacji. Przebudowałam informacje o produktach na podstawie ćwiczenia card-sorting z użytkownikami, kategoryzując treści tam, gdzie użytkownicy spodziewali się ich znaleźć. Dodałam punkty do szybkiego skanowania i połączyłam informacje o składnikach z instrukcjami użytkowania, odpowiadając na kluczową potrzebę przejrzystości. Stworzyłam też wyróżnienia produktów i infografiki, aby pokazać korzyści i efekty suplementu, ustalając wyraźną hierarchię i sprawiając, że strona była zarówno informacyjna, jak i wizualnie przyswajalna.",
+        subtitle: "Information Hierarchy",
+        description: "The challenge was that the Absolute Collagen site had a lot of content but was overwhelming and hard to navigate. I reorganized product information based on a card-sorting exercise with users, categorizing content where users expected it. I added scannable points and combined ingredient info with usage instructions, addressing key clarity needs. I also created product highlights and infographics to showcase benefits and effects of the supplement, establishing a clear hierarchy and making the page both informative and visually digestible.",
     },
 
     {
@@ -56,17 +56,17 @@ const projects = [
 
     {
         type: "text",
-        subtitle: "Spójność marki",
-        description: "Zauważyłam, że marka miała wiele różnych kierunków wizualnych na stronie, więc uprościłam ją, wybierając jeden główny żółty kolor, ujednolicając przyciski, ikony i typografię oraz projektując elastyczne materiały do infografik i mediów społecznościowych. Celem był czysty, nowoczesny wygląd z luksusowym charakterem, czyniący stronę spójną, angażującą i przystępną dla odbiorców.",
+        subtitle: "Brand Consistency",
+        description: "I noticed the brand had multiple visual directions on the site, so I simplified it by choosing a single primary yellow, unifying buttons, icons, and typography, and designing flexible assets for infographics and social media. The goal was a clean, modern look with a luxurious feel, making the site cohesive, engaging, and approachable.",
     },
     {
         type: "text",
-        subtitle: "Efekt końcowy",
-        description: "Dopracowanie istniejącej, bogatej w treści marki — poprawa przejrzystości, spójności i zaangażowania — może być trudniejsze niż tworzenie wszystkiego od zera, ale jest również niezwykle satysfakcjonujące. Podeszłam do tego strategicznie. Projekt wymagał ogromu niewidocznej pracy, od dostosowania standardów UX i analizy konkurencji po kwestie techniczne.",
+        subtitle: "Final Outcome",
+        description: "Refining an existing, content-rich brand — improving clarity, consistency, and engagement — can be harder than starting from scratch but is also highly rewarding. I approached it strategically. The project involved extensive unseen work, from adjusting UX standards and competitive analysis to technical considerations.",
     },
 ];
 
-// Function to create and append tiles to the grid (nie zmieniamy, działa)
+// Function to create and append tiles to the grid (unchanged, works)
 function createTiles() {
     const gridContainer = document.getElementById("grid-container");
 
