@@ -1,0 +1,254 @@
+#grid-container-about-me{ 
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 1.6rem;
+  width: 100%;         
+  margin: 0 auto;    
+ 
+}
+@media (max-width: 768px) {
+    #grid-container-about-me{
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1.6rem;
+    }
+   
+}
+
+#contact-wrapper{
+    color: #000000;
+    grid-row: 1;
+    grid-column: 2 / 6;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#contact-wrapper a{
+  
+    text-decoration: none;
+    color:#000000;
+    position: relative; /* <-- makes pseudo-element position relative to this link */
+}
+
+#contact-wrapper p{
+  margin-bottom: 0;
+  margin-top: 0.2rem;
+}
+
+
+#contact-wrapper a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #0f0f0f;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#contact-wrapper a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+.wrapper-vertical{
+  grid-column: 2 / 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top:4rem
+}
+
+.wrapper-horizontal{
+  display: flex;
+  flex-direction: row;
+  gap:6rem;
+  margin-bottom: 3.2rem;
+
+}
+
+.title-about-me{
+    
+    color: #f7f5f8;
+    font-family: 'Noto Sans';
+    font-size: 3.6rem;
+    line-height: 1.1;
+    white-space: normal;
+    
+}
+
+.body-about-me{
+    grid-column: span 1;
+    flex: 1;
+    min-width: 250px;  /* prevents them from getting too narrow on small screens */
+
+    padding-top: 2rem;
+    color: #ffffff;
+    font-family: 'Noto Sans';
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: normal;
+
+}
+
+
+
+#image-about-me {
+  grid-column: 9 / 14;
+}
+
+#image-about-me img{
+  max-width: 100%;
+}
+
+.image-wrapper {
+  margin-top:8rem ;
+  position: relative;   /* needed for absolute positioning of badge */
+  width: 100%;          /* ensures it fills the grid column */
+}
+
+.image-wrapper img.main-image {
+  width: 100%;          /* responsive */
+  height: auto;
+  display: block;
+}
+
+.image-wrapper img.badge {
+  position: absolute;
+  top: -10%;          /* adjust until 1/4 of badge hangs over the top */
+  left: -10%;        /* adjust until 1/4 of badge hangs over the right */
+  width: 20%;         /* scales with the image */
+  height: auto;
+}
+
+.white-bg
+{ grid-row: 3;
+  grid-column: 1/15;
+
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  background: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  align-items:flex-end;
+}
+
+.image-2 {
+  grid-row: 1;
+  grid-column: 7/14;
+}
+
+.image-2 img{
+  max-width: 100%;
+}
+
+/* ------------------------ */
+/* MOBILE / RESPONSIVE BELOW */
+/* ------------------------ */
+@media (max-width: 768px) {
+  /* Stack layout vertically */
+  #grid-container-about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Move the image before the text */
+  #image-about-me {
+    order: -1;
+    padding: 0 1.6rem; /* same margin as text */
+  }
+
+  /* Keep spacing around text */
+  .wrapper-vertical {
+     padding: 0 1.6rem 3rem 1.6rem;
+     display: contents; 
+     
+  }
+
+  /* Body text stacking */
+  .wrapper-horizontal {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Main image full width */
+  #image-about-me img,
+  .image-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Give second image same margin */
+  .image-2 {
+    padding: 0 1.6rem;
+  }
+
+  .image-wrapper {
+  position: relative;
+  margin-top: 2.2rem;
+  }
+
+
+  #image-about-me .image-wrapper img.badge {
+    width: 20vw;
+    max-width: 100px;
+    min-width: 40px;
+    top: -8%;
+    right: -4%;
+    left: auto;
+  }
+
+
+  .title-about-me {
+    font-size: clamp(2.8rem, 8vw, 3rem);
+    order: -2;    
+    padding: 0 1.6rem;
+  }
+
+  .body-about-me {
+    font-size: 1rem;
+    padding: 0 1.6rem;
+
+  }
+    .body-about-me:nth-of-type(2) {
+    margin-bottom: 2rem; /* adjust as you like */
+  }
+
+/* ------------------------ */
+      /* WHITE SECTION */
+/* ------------------------ */
+  .white-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    padding: 4rem 0 8rem 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  #contact-wrapper {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0 1.6rem;
+    order: 2;
+  }
+
+  .image-2 {
+    order: 1;
+  }
+}

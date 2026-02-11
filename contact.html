@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisAlchemist Branding & Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="styles.css">
+   
+      <!-- Favicon for light mode -->
+    <link rel="icon" href="logo/my-logo-black.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="logo/my-logo-white.png" media="(prefers-color-scheme: dark)">
+   
+</head>
+<body>
+   
+   <div id="navbar"></div>
+   <section>
+    <div class="wrapper-contact">
+    <img id="image-contact" src="/about-me/img_1.jpg">
+      
+    <div class="wrapper-vertical">
+       <div id="form-header">
+            <h1>Get in touch</h1>
+            <p>Send the form to arrange a chat with me. We will talk about your project and goals. I usually respond within 48h.</P>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- dont delete this - its public access key (not ap key) -->
+        <input type="hidden" name="access_key" value="f2f493b5-ddc5-4de3-9906-4dc88bae6833">
+
+        <!-- Strongly recommended: metadata to lower spam score -->
+      <input type="hidden" name="subject" value="New booking inquiry from website">
+      <input type="hidden" name="from_name" value="Studio Booking Form">
+      <input type="hidden" name="replyto" value="email"> 
+          <!-- edit form here -->
+        <label> Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label> E-mail
+          <input type="email" name="email" required>
+        </label>
+
+        <label> Brand/Product Name
+          <input type="text" name="brand-name">
+        </label>
+
+        <label> Timeframe
+          <select name="timeframe" required>
+            <option value="">Select…</option>
+            <option value="less-than-2-weeks">Less than 2 weeks</option>
+            <option value="2-4-weeks">2–4 weeks</option>
+            <option value="1-2-months">1–2 months</option>
+            <option value="2-3-months">2–3 months</option>
+            <option value="ongoing">Ongoing</option>
+          </select>
+        </label>
+
+        <label> Budget
+          <select name="budget" required>
+            <option value="">Select…</option>
+            <option value="200-600">£300 – £600</option>
+            <option value="700-1000">£7000 – £1000</option>
+            <option value="1000-1500">£1,000 – £1,500</option>
+            <option value="1500plus">£1,500 + </option>
+          </select>
+        </label>
+
+        <label> How did you find me?
+          <input type="text" name="find-me">
+        </label>
+
+        <label> Description of your project - goals, deliverables (don’t shy away from details)
+          <textarea name="message" rows="9"></textarea>
+        </label>
+
+        <!-- Honeypot -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none !important">
+
+        <button class="button-secondary" type="submit">Send</button>
+      </form>
+    </div>
+  </div> 
+
+</section>
+
+
+    
+    <div id="footer-placeholder"></div>
+
+
+    <script src="footer-loader.js"></script>
+    <script src="menu-loader.js"></script>
+</body>
+</html>

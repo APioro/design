@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Angelika Pióro</title>
+    <meta name="description" content=" visalchemist studio of Angelika Pióro, branding and graphic design">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/design/styles.css">
+   <link rel="icon" href="logo-for-favicon.ico">
+    <link rel="icon" href="logo/my-logo-black.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="logo/my-logo-white.png" media="(prefers-color-scheme: dark)">
+   
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="main-container">
+   
+        <div class="header-wrapper dark-section">
+            <div class="banner">
+                <div class="wrapper-vertical">
+               <h1> Hej, jestem Angelika Pióro</h1>
+                
+                </div>
+            
+                <div class="badge">
+                    <img src="badge-noto-sans.png" alt="Badge reading 'Mindful process, daring execution'">
+                </div>
+            </div>
+        </div>
+        
+      <!-- Seciton: WHAT I DO -->
+
+      <div class="grid-container homepage-text">
+            <div class="grid-item" id="text-homepage-1">
+                <div class="text-left-sided">
+                    
+                    <h3>
+                    Moją pasją jest branding i tworzenie materiałów marketingowych, które łączą estetykę z funkcjonalnością.
+                   </h3>
+                    <p class="short">
+                    
+                Jestem absolwentką BA in Graphic Design z Coventry University. Biegle posługuję się Adobe Creative Suite, a znajomość podstaw HTML, CSS i JavaScript pozwala mi projektować w zgodzie z technicznymi ograniczeniami i efektywnie współpracować z zespołami developerskimi.
+
+Mam doświadczenie zarówno w projektach akademickich, jak i w pracy wolontariackiej, co nauczyło mnie pracy procesowej, współpracy w zespole i przyjmowania konstruktywnego feedbacku.</p>
+                </div>
+                
+            </div>
+            <div class="grid-item" id="portrait-shot">
+                <img src="about-me/portrait-shot.jpg">
+            </div>
+      </div>
+
+    <section id="graphic-design">
+        <div class="grid-container" id="grid-container">
+            <!-- Tiles will be dynamically added here -->
+        </div>
+
+    </section>
+</div>
+
+ 
+
+    <div id="footer-placeholder"></div>
+    
+    <script>const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+</script>
+    <script src="/design/homepage-projects.js"></script>
+    <script src="/design/footer-loader.js"  defer></script>
+    <script src="/design/menu-loader.js"  defer></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studio - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+      <!-- Favicon for light mode -->
+    <link rel="icon" href="/logo/favicon-black.svg" media="(prefers-color-scheme: light)">
+
+    <!-- Favicon for dark mode -->
+    <link rel="icon" href="logo/favicon-white.svg" media="(prefers-color-scheme: dark)">
+   
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main>
+    <!-- ABOUT ME SECTION -->
+    <div id="about-me-section">
+    <div id="grid-container-about-me">
+
+      <div class="wrapper-vertical">
+        <h1 class="title-about-me"> 
+          For brands that actually mean it
+        </h1>
+
+        <div class="wrapper-horizontal">
+
+          <div class="body-about-me"> 
+            At 21, I left my quiet village in the mountains of Poland and moved to the UK to study graphic design. It was my first step into independence, adventure, and discovering what kind of creative life I wanted to build.
+            <br><br>
+            Early on, I realized the design world often prioritizes speed, trends, and repetition over depth. That made me step back and ask the basics: who am I designing for, and why? 
+          </div>
+
+          <div class="body-about-me"> 
+            For me, it’s about authenticity and strategy. I treat every brand like it’s my own. I dive in, explore the world behind it, and stay flexible — whether that means learning a new tool, understanding an unfamiliar industry, or experimenting with a style I haven’t tried before. 
+           </div>
+
+        </div>
+      </div>
+
+      <div id="image-about-me">
+        <div class="image-wrapper">
+          <img src="about-me/img_1.jpg" alt="About me" class="main-image">
+          <img src="badge-noto-sans.png" alt="Badge" class="badge">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="white-bg">
+    <div id="contact-wrapper">
+      <div id="contact"><b>LET'S WORK TOGETHER</b></div>
+      <p><a href="mailto:angelikapioro@gmail.com">angelikapioro@gmail.com</a></p>
+      <p><a href="https://www.instagram.com/vis.alchemist/">instagram.com/vis.alchemist</a></p>
+    </div>
+    <div class="image-2">
+      <img src="about-me/img_2.jpg" alt="About me">
+    </div>
+  </div>
+
+    </main>
+ 
+    <div id="footer-placeholder"></div>
+    <script src="footer-loader.js"></script>
+    <script src="menu-loader.js"></script>
+
+
+
+ <script>
+    // Add the class after page loads to trigger the transition
+    window.addEventListener('load', () => {
+      document.body.classList.add('page-contact');
+    });
+  </script>
+
+  
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('vertical-line').classList.add('animate');
+    });
+  </script>
+
+</body>
+</html>
