@@ -94,7 +94,7 @@ p {
   font-family: var(--font-primary);
   font-size: var(--fs-p);
   line-height: var(--lh-p);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
   margin: 0;
   margin-bottom: 1em; /* spacing between paragraphs */
   
