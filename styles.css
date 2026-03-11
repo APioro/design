@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "Switzer";
-  src: url("/fonts/Switzer-Variable.ttf");
+  src: url("/design/fonts/Switzer-Variable.ttf");
   font-weight: 100 900; /* or whatever range the font supports */
   font-style: normal;
 }
 
 @font-face {
   font-family: "Switzer";
-  src: url("/fonts/Switzer-VariableItalic.tff");
+  src: url("/design/fonts/Switzer-VariableItalic.tff");
   font-weight: 100 900; /* or whatever range the font supports */
   font-style: italic;
 }
