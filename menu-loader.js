@@ -1,3 +1,3 @@
-  fetch('/design/menu.html')
+  fetch('/menu.html')
     .then(response => response.text())
     .then(data => document.getElementById('navbar').innerHTML = data);

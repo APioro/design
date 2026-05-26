@@ -4,81 +4,107 @@ const projects = [
 
     
          {
-        image: "artsider_phone.jpg", // Original image path
+        image: "/photos/artsider/artsider_phone.jpg", // Original image path
         size: "half",
     },
 
       
   {
-        image: "artsider_cards.jpg", // Original image path
+        image: "/photos/artsider/artsider_cards.jpg", // Original image path
         size: "half",
     },
   
   
 
     {
-        image: "artsider_website.jpg",
+        image: "/photos/artsider/artsider_website.jpg",
         size: "large", 
     },
 
 
      {
-        image: "color.jpg", // Original image path
+        image: "/photos/artsider/color.jpg", // Original image path
         size: "half",
     },
 
 
 
    {
-        image: "artsider.gif", // Original image path
+        image: "/photos/artsider/artsider.gif", // Original image path
         size: "half",  
 
     },
 
     {
-        image: "logo_project.jpg",
+        image: "/photos/artsider/logo_project.jpg",
         size: "large", 
     },
 
 
     {
-        image: "artsider_socialmedia.jpg",
+        image: "/photos/artsider/artsider_socialmedia.jpg",
         size: "large", 
     },
 
         {
-        image: "logo_rational.jpg",
+        image: "/photos/artsider/logo_rational.jpg",
         size: "large", 
     },
     
   
     // Add more projects as needed...
 ];
+// Function to create and append tiles
+function observeTiles() {
+    const items = document.querySelectorAll(".grid-item");
 
-// Function to create and append tiles to the grid
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // animate once
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    items.forEach(item => observer.observe(item));
+}
+
 function createTiles() {
-    const gridContainer = document.getElementById("grid-container"); 
+    const gridContainer = document.getElementById("grid-container");
 
     projects.forEach(project => {
         const gridItem = document.createElement("div");
-        gridItem.classList.add("grid-item", project.size); // Add size class
-        
-        // Create image element
-        const img = document.createElement("img"); 
-        img.src = project.image; // Original image
-        img.loading = "lazy"; // Add lazy loading
-         
-         // Optional: add .gif-specific class if needed
-        if (project.image.endsWith(".gif")) {
-            img.classList.add("is-gif");
+        gridItem.classList.add("grid-item", project.size);
+
+        if (project.type === "image") {
+            const img = document.createElement("img");
+            img.src = project.image;
+            img.loading = "lazy";
+            gridItem.appendChild(img);
+
+        } else if (project.type === "video") {
+            const video = document.createElement("video");
+
+            video.src = project.src;
+            video.autoplay = true;
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+
+            gridItem.appendChild(video);
+
+        } else if (project.type === "text") {
+            gridItem.classList.add("text-box");
+            gridItem.innerHTML = project.content;
         }
 
-        // Append image, title, and tags to the grid item
-     
-        gridItem.appendChild(img);
         gridContainer.appendChild(gridItem);
     });
 }
 
-// Call the function to create tiles
+// Call the function
 createTiles();
+observeTiles();

@@ -1,27 +1,36 @@
 const projects = [
   
-    {
-    title: "Astrolume",
-    category: "Branding",
-    image: "astrolume/cxc.jpg",
+       {
+    title: "HIGHLAND ENVIRONMENTAL ANALYTICS",
+    category: "BRAND IDENTITY",
+    image: "/photos/hea/brand_hea.jpg",
     size: "half",
-    link: "astrolume/astrolume.html",
+    // link: "hea/hea",
+    theme: "light"
+  },
+
+  {
+    title: "Astrolume",
+    category: "BRAND IDENTITY",
+    image: "/photos/astrolume/cxc.jpg",
+    size: "half",
+    link: "astrolume/astrolume",
     theme: "light"
   },
 
 
-
+   /*
       {
     title: "Bowl'd Salad Bar",
-    category: "Branding",
-    image: "bowld/asparagus.jpg",
+    category: "Branding, Packaging",
+    image: "/photos/bowld/asparagus.jpg",
     size: "half",
-    link: "bowld/bowld.html",
+    link: "bowld/bowld",
     theme: "dark" // black text
   },
 
 
-  /*
+  
  {
     title: "Darker Tales ",
     category: "Editorial, Illustration",
@@ -36,53 +45,78 @@ const projects = [
   {
     title: "Absolute Collagen",
     category: "UX/UI Design, E-commerce",
-    image: "absolute collagen/ac-mockup-closeup.png",
+    image: "/photos/absolute-collagen/ac-mockup-closeup.png",
     size: "half",
-    link: "absolute collagen/absolute-collagen.html",
+    link: "absolute collagen/absolute-collagen",
     theme: "dark" // white text
   },
 
 
 
   {
-    title: "FUndacja Artsider ",
-    category: "Branding",
-    image: "artsider/artsider_cards.jpg",
+    title: "Artsider Foundation ",
+    category: "BRAND IDENTITY",
+    image: "/photos/artsider/artsider_cards.jpg",
     size: "half",
-    link: "artsider/artsider.html",
+    link: "artsider/artsider",
     theme: "light"
   },
   
+
 
 ];
 
   
     // Add more projects as needed...
+function observeTiles() {
+    const items = document.querySelectorAll(".grid-item");
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // animate once
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
 
-// Function to create and append tiles to the grid
+    items.forEach(item => observer.observe(item));
+}
+
 function createTiles() {
   const gridContainer = document.getElementById("grid-container");
 
   projects.forEach((project, index) => {
+
     const gridItem = document.createElement("div");
     gridItem.classList.add("homepage-grid-item", project.size);
 
-    const img = document.createElement("img");
-    img.src = project.image;
-    img.alt = project.title;
+    // ---------- MEDIA ----------
+    let media;
 
-    if(index !== 0) img.loading = "lazy";
+    if (project.video) {
+      media = document.createElement("video");
+      media.src = project.video;
+      media.autoplay = true;
+      media.muted = true;
+      media.loop = true;
+      media.playsInline = true;
+    } else {
+      media = document.createElement("img");
+      media.src = project.image;
+      media.alt = project.title;
+      if (index !== 0) media.loading = "lazy";
+    }
 
     const link = document.createElement("a");
     link.href = project.link;
-   
-    link.appendChild(img);
+    link.appendChild(media);
 
-    // Create overlay
+    // ---------- OVERLAY ----------
     const overlay = document.createElement("div");
-   overlay.className = `overlay ${project.theme || "light"}`;
-; // or use "dark" for white text on dark image
+    overlay.className = `overlay ${project.theme || "light"}`;
 
     const title = document.createElement("div");
     title.className = "overlay-title top-left";
@@ -95,6 +129,7 @@ function createTiles() {
     overlay.appendChild(title);
     overlay.appendChild(category);
 
+    // ---------- APPEND ----------
     gridItem.appendChild(link);
     gridItem.appendChild(overlay);
 
@@ -104,3 +139,4 @@ function createTiles() {
 
 // Call the function to create tiles
 createTiles();
+observeTiles();

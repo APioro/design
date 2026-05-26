@@ -1,75 +1,76 @@
-// PHOTOES FOR DARKER TALES PROJECT
+// PHOTO PROJECTS
 const projects = [
-    {
-        image: "logo-balck-astro.jpg", // Original image path
-        size: "half",  
-
-    },
-
-    
-    
-    {
-        image: "notepad-astro.jpg", // Original image path
-        size: "half",
-    },
-
-  
-        {
-        image: "chain-astro.jpg", // Original image path
-        size: "half",
-    },
-  
-                {
-        image: "d.jpg", // Original image path
-        size: "half",
-    },
-
-    
-
-    {
-        image: "crad-astro.jpg", // Original image path
-        size: "half",
-    },
-
-           {
-        image: "color-palette-astro.jpg", // Original image path
-        size: "half",
-    },
-    {
-        image: "cxc.jpg",
-        size: "half", 
-    },
-
-    {
-        image: "tshirt.jpg", // Original image path
-        size: "half",
-    },
-    
-
-
-    // Add more projects as needed...
+  {
+    image: "/photos/astrolume/logo-balck-astro.jpg",
+    size: "half",
+  },
+  {
+    image: "/photos/astrolume/notepad-astro.jpg",
+    size: "half",
+  },
+  {
+    image: "/photos/astrolume/chain-astro.jpg",
+    size: "half",
+  },
+  {
+    image: "/photos/astrolume/d.jpg",
+    size: "half",
+  },
+  {
+    image: "/photos/astrolume/crad-astro.jpg",
+    size: "half",
+  },
+  {
+    image: "/photos/astrolume/color-palette-astro.jpg",
+    size: "half",
+  },
+  {
+    image: "/photos/astrolume/cxc.jpg",
+    size: "half",
+  },
+  {
+    image: "/photos/astrolume/tshirt.jpg",
+    size: "half",
+  }
 ];
 
-// Function to create and append tiles to the grid
 function createTiles() {
-    const gridContainer = document.getElementById("grid-container"); 
+  const gridContainer = document.getElementById("grid-container");
 
-    projects.forEach(project => {
-        const gridItem = document.createElement("div");
-        gridItem.classList.add("grid-item", project.size); // Add size class
-        
-        // Create image element
-        const img = document.createElement("img"); 
-        img.src = project.image; // Original image
-        img.loading = "lazy"; // Add lazy loading
-         
+  projects.forEach((project, index) => {
+    const gridItem = document.createElement("div");
+    gridItem.classList.add("grid-item", project.size);
 
-        // Append image, title, and tags to the grid item
-     
-        gridItem.appendChild(img);
-        gridContainer.appendChild(gridItem);
-    });
+    const img = document.createElement("img");
+    img.src = project.image;
+    img.loading = index !== 0 ? "lazy" : "eager";
+
+    gridItem.appendChild(img);
+    gridContainer.appendChild(gridItem);
+  });
 }
 
-// Call the function to create tiles
+// Intersection Observer (fade-in on scroll)
+function observeTiles() {
+  const items = document.querySelectorAll(".grid-item");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  items.forEach((item) => observer.observe(item));
+}
+
+// INIT
 createTiles();
+observeTiles();

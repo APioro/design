@@ -2,28 +2,28 @@
 
 @font-face {
   font-family: "Switzer";
-  src: url("/studio/fonts/Switzer-Variable.ttf");
+  src: url("fonts/Switzer-Variable.ttf");
   font-weight: 100 900; /* or whatever range the font supports */
   font-style: normal;
 }
 
 @font-face {
   font-family: "Switzer";
-  src: url("/studio/fonts/Switzer-VariableItalic.tff");
+  src: url("fonts/Switzer-VariableItalic.ttf") ;
   font-weight: 100 900; /* or whatever range the font supports */
   font-style: italic;
 }
 
 @font-face {
   font-family: "AzeretMono";
-  src: url("/studio/fonts/AzeretMono-Variable.woff2") format("woff2-variations");
+  src: url("/fonts/AzeretMono-Variable.woff2") format("woff2-variations");
   font-weight: 100 900; /* or whatever range the font supports */
   font-style: normal;
 }
 
 @font-face {
   font-family: "AzeretMono";
-  src: url("/studio/fonts/AzeretMono-VariableItalic.woff2") format("woff2-variations");
+  src: url("/fonts/AzeretMono-VariableItalic.woff2") format("woff2-variations");
   font-weight: 100 900; /* or whatever range the font supports */
   font-style: italic;
 }
@@ -64,6 +64,7 @@
 
   
   /* Optional weights */
+    --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
 --fw-semibold: 600;
@@ -81,6 +82,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-primary);
   margin: 0;
   margin-bottom: 0.8em; /* scales with font size */
+  
 }
 
 
@@ -94,9 +96,10 @@ p {
   font-family: var(--font-primary);
   font-size: var(--fs-p);
   line-height: var(--lh-p);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-light);
   margin: 0;
   margin-bottom: 1em; /* spacing between paragraphs */
+   font-style: normal;
   
 }
 
@@ -122,7 +125,7 @@ running-h.{font-family: var(--font-secondary); font-size: var(--fs-running-h); l
     p {
     font-size: var(--fs-m-p);
     line-height: var(--lh-p);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
     margin-bottom: 1em; /* spacing between paragraphs */
     }
 
@@ -806,10 +809,31 @@ section {
     position: relative;
     overflow: hidden;
     border-radius: 0px; /* Rounded corners */
+
+    
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
     
 }
 
+.grid-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .grid-item img {
+    width: 100%;
+    height: auto;     /* this keeps the aspect ratio */
+    max-height: 100vh; 
+    display: block;
+    border-radius: 0px; /* Match the border-radius of the tile */
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.grid-item video {
     width: 100%;
     height: auto;     /* this keeps the aspect ratio */
     max-height: 100vh; 
@@ -829,7 +853,13 @@ section {
     grid-column: span 1; /* Span 1 column */
 }
 
-
+.grid-item.text-box {
+    min-height: 300px;      /* ensures tall enough */
+    margin-bottom: 18em;    /* spacing below */
+    justify-content: flex-start;
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
 
 
