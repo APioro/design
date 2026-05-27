@@ -43,39 +43,22 @@
         </div>
 
 <!-- TICKER TAPE -->        
-    <div class="ticker-tape-container">
-      <div class="ticker-tape">
-        
-        <div class="ticker-tape__track">
-          
-          <span class="ticker-tape__item">
-            UI/UX <img src="logo1.svg" alt="">
-          </span>
+<div class="marquee">
+  <ul class="marquee__content">
+    <li>UI/UX <img src="/design/logo/my-logo-black.svg" alt="logo"></li>
+    <li>BRANDING <img src="/design/logo/my-logo-black.svg" alt="logo"></li>
+    <li>GRAPHIC DESIGN <img src="/design/logo/my-logo-black.svg" alt="logo"></li>
+    <li>ART DIRECTION <img src="/design/logo/my-logo-black.svg" alt="logo"></li>
+  </ul>
 
-          <span class="ticker-tape__item">
-            BRANDING <img src="logo2.svg" alt="">
-          </span>
+  <ul aria-hidden="true" class="marquee__content">
+    <li>UI/UX <img src="/design/logo/my-logo-black.svg" alt="logo"></li>
+    <li>BRANDING <img src="/design/logo/my-logo-black.svg" alt="logo"></li>
+    <li>GRAPHIC DESIGN <img src="/design/logo/my-logo-black.svg" alt="logo"></li>
+    <li>ART DIRECTION <img src="/design/logo/my-logo-black.svg" alt="logo"></li>
+  </ul>
+</div>
 
-          <span class="ticker-tape__item">
-            GRAPHIC DESIGN <img src="logo3.svg" alt="">
-          </span>
-
-          <!-- duplicate for seamless loop -->
-          <span class="ticker-tape__item">
-            UI/UX <img src="logo1.svg" alt="">
-          </span>
-
-          <span class="ticker-tape__item">
-            BRANDING <img src="logo2.svg" alt="">
-          </span>
-
-          <span class="ticker-tape__item">
-            GRAPHIC DESIGN <img src="logo3.svg" alt="">
-          </span>
-
-        </div>
-      </div>
-    </div>
 
     
       <section id="graphic-design">
@@ -195,6 +178,7 @@ faqItems.forEach(item => {
     <script src="/design/gallery.js"></script>
     <script src="/design/footer-loader.js"  defer></script>
     <script src="/design/menu-loader.js"  defer></script>
+    <script src="/design/ticker.js"  defer></script>
 
 </body>
 </html>
