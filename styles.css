@@ -900,62 +900,21 @@ section {
     color: #000;                  /* Title color */
 }
 
-/* Base overlay styling */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+/* meta line */
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-primary);
+  font-size: calc(var(--fs-p) * 0.85);
+  font-weight: var(--fw-medium);
+  color: #1a1a1a;
 }
 
-.homepage-grid-item:hover .overlay {
-  opacity: 1;
-}
-
-/* Shared text styles */
-.overlay-title,
-.overlay-category {
-  position: absolute;
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 800;
-  font-size: 2.1rem;
-  padding: 0.6em 1em;
-  pointer-events: none;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Positioning */
-.top-left {
-  top: 0;
-  left: 0;
-}
-
-.bottom-right {
-  bottom: 0;
-  right: 0;
-}
-
-/* Themes */
-.overlay.light .overlay-title,
-.overlay.light .overlay-category {
-  color: rgb(252, 251, 247);
-}
-
-.overlay.dark .overlay-title,
-.overlay.dark .overlay-category {
-  color: rgb(14, 13, 13);
-}
-
-@media (max-width: 768px) {
-    .overlay-title, .overlay-category {
-        font-size: 1.2rem;  /* smaller on tablets */
-    }
-   
+/* arrow alignment */
+.project-arrow {
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Tile Styles for inside projects*/

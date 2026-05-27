@@ -114,24 +114,34 @@ function createTiles() {
     link.href = project.link;
     link.appendChild(media);
 
-    // ---------- OVERLAY ----------
-    const overlay = document.createElement("div");
-    overlay.className = `overlay ${project.theme || "light"}`;
+    // ---------- LABEL (NEW STRUCTURE) ----------
+    const label = document.createElement("div");
+    label.className = "project-label";
 
     const title = document.createElement("div");
-    title.className = "overlay-title top-left";
+    title.className = "project-title";
     title.textContent = project.title;
 
-    const category = document.createElement("div");
-    category.className = "overlay-category bottom-right";
+    const meta = document.createElement("div");
+    meta.className = "project-meta";
+
+    const arrow = document.createElement("span");
+    arrow.className = "project-arrow";
+    arrow.textContent = "↗"; // or replace with SVG later
+
+    const category = document.createElement("span");
+    category.className = "project-category";
     category.textContent = project.category;
 
-    overlay.appendChild(title);
-    overlay.appendChild(category);
+    meta.appendChild(arrow);
+    meta.appendChild(category);
+
+    label.appendChild(title);
+    label.appendChild(meta);
 
     // ---------- APPEND ----------
     gridItem.appendChild(link);
-    gridItem.appendChild(overlay);
+    gridItem.appendChild(label);
 
     gridContainer.appendChild(gridItem);
   });
