@@ -853,14 +853,19 @@ section {
     font-weight: var(--fw-medium);
     font-family: var(--font-secondary);
     margin-top: 1rem;
+    text-transform:capitalize;
 }
+
 .project-category{
     font-family: var(--font-secondary);
     font-size: var(--fs-p);
-    color:#778ffa
+    color:#7779fa;
+    text-transform: uppercase;
 }
 
-
+.project-arrow{
+    color: #7779fa
+}
 /* Tile Styles for homepage*/
 
 .homepage-grid-item {
