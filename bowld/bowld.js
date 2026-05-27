@@ -1,39 +1,39 @@
 // PHOTOES FOR DARKER TALES PROJECT
 const projects = [
    {
-        image: "/photos/bowld/logo.jpg", // Original image path
+        image: "/design/photos/bowld/logo.jpg", // Original image path
         size: "half",
     },
 
     
     {
-        image: "/photos/bowld/bowls-correct.jpg", // Original image path
+        image: "/design/photos/bowld/bowls-correct.jpg", // Original image path
         size: "half",
     },
 
         
      {
-        image: "/photos/bowld/asparagus.jpg", // Original image path
+        image: "/design/photos/bowld/asparagus.jpg", // Original image path
         size: "half",
     }, 
 
 
       {
-        image: "/photos/bowld/apron.jpg",
+        image: "/design/photos/bowld/apron.jpg",
         size: "half", 
     },
 
 
     
    {
-        image: "/photos/bowld/socials.jpg", // Original image path
+        image: "/design/photos/bowld/socials.jpg", // Original image path
         size: "half",  
 
     },
 
  
    {
-        image: "/photos/bowld/stickers.mp4", // Original image path
+        image: "/design/photos/bowld/stickers.mp4", // Original image path
         size: "half",  
 
     },

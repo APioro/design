@@ -1,12 +1,12 @@
 const projects = [
     {
         type: "media",
-        image: "/photos/absolute-collagen/ac-mockup-closeup.png",
+        image: "/design/photos/absolute-collagen/ac-mockup-closeup.png",
         size: "half",
     },
     {
         type: "media",
-        image: "/photos/absolute-collagen/ac-nav.mp4",
+        image: "/design/photos/absolute-collagen/ac-nav.mp4",
         size: "half",
     },
 
@@ -23,12 +23,12 @@ const projects = [
 
     {
         type: "media",
-        image: "/photos/absolute-collagen/product_page.jpg",
+        image: "/design/photos/absolute-collagen/product_page.jpg",
         size: "half",
     },
     {
         type: "media",
-        image: "/photos/absolute-collagen/info_ac_square.mp4",
+        image: "/design/photos/absolute-collagen/info_ac_square.mp4",
         size: "half",
     },
 
@@ -45,12 +45,12 @@ const projects = [
 
     {
         type: "media",
-        image: "/photos/absolute-collagen/ac_type.jpg",
+        image: "/design/photos/absolute-collagen/ac_type.jpg",
         size: "half",
     },
     {
         type: "media",
-        image: "/photos/absolute-collagen/assets_dark.jpg",
+        image: "/design/photos/absolute-collagen/assets_dark.jpg",
         size: "half",
     },
 

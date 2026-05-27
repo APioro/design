@@ -1,35 +1,35 @@
 // PHOTO PROJECTS
 const projects = [
   {
-    image: "/photos/astrolume/logo-balck-astro.jpg",
+    image: "/design/photos/astrolume/logo-balck-astro.jpg",
     size: "half",
   },
   {
-    image: "/photos/astrolume/notepad-astro.jpg",
+    image: "/design/photos/astrolume/notepad-astro.jpg",
     size: "half",
   },
   {
-    image: "/photos/astrolume/chain-astro.jpg",
+    image: "/design/photos/astrolume/chain-astro.jpg",
     size: "half",
   },
   {
-    image: "/photos/astrolume/d.jpg",
+    image: "/design/photos/astrolume/d.jpg",
     size: "half",
   },
   {
-    image: "/photos/astrolume/crad-astro.jpg",
+    image: "/design/photos/astrolume/crad-astro.jpg",
     size: "half",
   },
   {
-    image: "/photos/astrolume/color-palette-astro.jpg",
+    image: "/design/photos/astrolume/color-palette-astro.jpg",
     size: "half",
   },
   {
-    image: "/photos/astrolume/cxc.jpg",
+    image: "/design/photos/astrolume/cxc.jpg",
     size: "half",
   },
   {
-    image: "/photos/astrolume/tshirt.jpg",
+    image: "/design/photos/astrolume/tshirt.jpg",
     size: "half",
   }
 ];

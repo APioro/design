@@ -2,7 +2,7 @@
 const projects = [
     {
         type: "image",
-        image: "/photos/hea/hea_big.jpg",
+        image: "/design/photos/hea/hea_big.jpg",
         size: "large",
     },
     {   type: "text",
@@ -18,13 +18,13 @@ const projects = [
     },
         {
         type: "image",
-        image: "/photos/hea/hea_front.jpg",
+        image: "/design/photos/hea/hea_front.jpg",
         size: "half",
     },
 
     {
         type: "image",
-        image: "/photos/hea/buliding.jpg",
+        image: "/design/photos/hea/buliding.jpg",
         size: "half",
     },
 
@@ -44,18 +44,18 @@ const projects = [
     
     {
         type: "image",
-        image: "/photos/hea/box_hea.jpg",
+        image: "/design/photos/hea/box_hea.jpg",
         size: "half",
     },
     {
         type: "image",
-        image: "/photos/hea/hea_social.jpg",
+        image: "/design/photos/hea/hea_social.jpg",
         size: "half",
     },
 
     {
         type: "image",
-        image: "/photos/hea/hea_docs.jpg",
+        image: "/design/photos/hea/hea_docs.jpg",
         size: "large",
     },
 
@@ -74,23 +74,23 @@ const projects = [
 
     {
         type: "image",
-        image: "/photos/hea/hea_datasheet.jpg",
+        image: "/design/photos/hea/hea_datasheet.jpg",
         size: "half",
     },
     {
         type: "image",
-        image: "/photos/hea/brand_hea.jpg",
+        image: "/design/photos/hea/brand_hea.jpg",
         size: "half",
     },
     {
         type: "image",
-        image: "/photos/hea/tote.jpg",
+        image: "/design/photos/hea/tote.jpg",
         size: "half",
     },
 
     {
         type: "image",
-        image: "/photos/hea/hea_colors.png",
+        image: "/design/photos/hea/hea_colors.png",
         size: "half",
     },
 
@@ -109,13 +109,13 @@ const projects = [
 
     {
         type: "video",
-        src: "/photos/hea/web_hea.mp4",
+        src: "/design/photos/hea/web_hea.mp4",
         size: "half",
     },
 
     // {
     //     type: "image",
-    //     image: "/photos/hea/hea_papers_large.jpg",
+    //     image: "/design/photos/hea/hea_papers_large.jpg",
     //     size: "large",
     // },
     

@@ -3,18 +3,18 @@ const projects = [
        {
     title: "HIGHLAND ENVIRONMENTAL ANALYTICS",
     category: "BRAND IDENTITY",
-    image: "/photos/hea/brand_hea.jpg",
+    image: "/design/photos/hea/brand_hea.jpg",
     size: "half",
-    link: "hea/hea.html",
+    link: "/design/hea/hea.html",
     theme: "light"
   },
 
   {
     title: "Astrolume",
     category: "BRAND IDENTITY",
-    image: "/photos/astrolume/cxc.jpg",
+    image: "/design/photos/astrolume/cxc.jpg",
     size: "half",
-    link: "astrolume/astrolume",
+    link: "/design/astrolume/astrolume.html",
     theme: "light"
   },
 
@@ -23,9 +23,9 @@ const projects = [
       {
     title: "Bowl'd Salad Bar",
     category: "Branding, Packaging",
-    image: "/photos/bowld/asparagus.jpg",
+    image: "/design/photos/bowld/asparagus.jpg",
     size: "half",
-    link: "bowld/bowld",
+    link: "/design/bowld/bowld.html",
     theme: "dark" // black text
   },
 
@@ -34,9 +34,9 @@ const projects = [
  {
     title: "Darker Tales ",
     category: "Editorial, Illustration",
-    image: "darker-tales/table-of-content.png",
+    image: "/design/darker-tales/table-of-content.png",
     size: "half",
-    link: "darker-tales/darker-tales.html",
+    link: "/design/darker-tales/darker-tales.html",
     theme: "light"
   },
   
@@ -45,9 +45,9 @@ const projects = [
   {
     title: "Absolute Collagen",
     category: "UX/UI Design, E-commerce",
-    image: "/photos/absolute-collagen/ac-mockup-closeup.png",
+    image: "/design/photos/absolute-collagen/ac-mockup-closeup.png",
     size: "half",
-    link: "absolute collagen/absolute-collagen",
+    link: "/design/absolute collagen/absolute-collagen.html",
     theme: "dark" // white text
   },
 
@@ -56,9 +56,9 @@ const projects = [
   {
     title: "Artsider Foundation ",
     category: "BRAND IDENTITY",
-    image: "/photos/artsider/artsider_cards.jpg",
+    image: "/design/photos/artsider/artsider_cards.jpg",
     size: "half",
-    link: "artsider/artsider",
+    link: "/design/artsider/artsider.html",
     theme: "light"
   },
   
