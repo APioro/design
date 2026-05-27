@@ -127,7 +127,7 @@ function createTiles() {
 
     const arrow = document.createElement("span");
     arrow.className = "project-arrow";
-    arrow.textContent = "↗"; // or replace with SVG later
+    arrow.textContent = "🡥"; // or replace with SVG later
 
     const category = document.createElement("span");
     category.className = "project-category";
