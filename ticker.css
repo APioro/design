@@ -12,6 +12,11 @@
 }
 
 .marquee__content {
+  font-size: var(--fs-small);
+  font-family: var(--font-secondary);
+  font-weight: var(--fw-medium);
+
+  color: black;
   flex-shrink: 0;
   display: flex;
   align-items: center;
