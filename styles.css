@@ -849,12 +849,15 @@ section {
 }
 
 .project-title{
-    font-size: var(--fs-h1);
-    margin-top: 4rem;
+    font-size: var(--fs-m-running-h);
+    font-weight: var(--fw-medium);
+    font-family: var(--font-secondary);
+    margin-top: 1rem;
 }
-.project-label{
-    font-size: var(--fs-h2);
-    margin-top: 4rem;
+.project-category{
+    font-family: var(--font-secondary);
+    font-size: var(--fs-p);
+    color:#778ffa
 }
 
 
