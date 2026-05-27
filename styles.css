@@ -848,6 +848,14 @@ section {
     }
 }
 
+.project-title{
+    font-size: var(--fs-h1);
+    margin-top: 4rem;
+}
+.project-label{
+    font-size: var(--fs-h2);
+    margin-top: 4rem;
+}
 
 
 /* Tile Styles for homepage*/
@@ -908,7 +916,7 @@ section {
   font-family: var(--font-primary);
   font-size: calc(var(--fs-p) * 0.85);
   font-weight: var(--fw-medium);
-  color: #1a1a1a;
+  color: #9d81b5;
 }
 
 /* arrow alignment */
