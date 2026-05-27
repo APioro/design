@@ -22,6 +22,10 @@
   align-items: center;
   gap: var(--ticker-gap);
 
+    margin: 0;
+  padding: 0;
+  list-style: none;
+
   min-width: 100%;
   animation: scroll 10s linear infinite;
 }
@@ -31,6 +35,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+
 
   padding: 0.6rem 1rem;
   white-space: nowrap;
