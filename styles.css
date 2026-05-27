@@ -87,7 +87,7 @@ h1, h2, h3, h4 {
 
 
 h1 { font-size: var(--fs-h1); line-height: var(--lh-h1); font-weight: var(--fw-bold);  letter-spacing: calc(-0.03em - 0.001vw); margin: 0;}
-h2 { font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: var(--fw-bold); letter-spacing: calc(-0.02em - 0.001vw); margin-bottom: 1.4rem;} 
+h2 { font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: var(--fw-medium); letter-spacing: calc(-0.02em - 0.001vw); margin-bottom: 1.4rem;} 
 h3 { font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: var(--fw-medium); letter-spacing: calc(-0.04em - 0.001vw)}
 h4 { font-size: var(--fs-h4); line-height: var(--lh-h4); font-weight: var(--fw-medium); }
 
@@ -118,7 +118,7 @@ running-h.{font-family: var(--font-secondary); font-size: var(--fs-running-h); l
 
  @media (max-width: 768px){
     h1 { font-size: var(--fs-m-h1); line-height: var(--lh-h1); font-weight: var(--fw-bold);  letter-spacing: calc(-0.03em - 0.001vw); margin: 0;}
-    h2 { font-size: var(--fs-m-h2); line-height: var(--lh-h2); font-weight: var(--fw-bold); letter-spacing: calc(-0.02em - 0.001vw); margin-bottom: 1.4rem;} 
+    h2 { font-size: var(--fs-m-h2); line-height: var(--lh-h2); font-weight: var(--fw-medium); letter-spacing: calc(-0.02em - 0.001vw); margin-bottom: 1.4rem;} 
     h3 { font-size: var(--fs-m-h3); line-height: var(--lh-h3); font-weight: var(--fw-medium); letter-spacing: calc(-0.04em - 0.001vw)}
     h4 { font-size: var(--fs-m-h4); line-height: var(--lh-h4); font-weight: var(--fw-medium); }
     

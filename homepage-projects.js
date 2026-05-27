@@ -5,7 +5,7 @@ const projects = [
     category: "BRAND IDENTITY",
     image: "/photos/hea/brand_hea.jpg",
     size: "half",
-    // link: "hea/hea",
+    link: "hea/hea.html",
     theme: "light"
   },
 
