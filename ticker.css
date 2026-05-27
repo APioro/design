@@ -12,7 +12,7 @@
 }
 
 .marquee__content {
-  font-size: var(--fs-small);
+  font-size: var(--fs-h4);
   font-family: var(--font-secondary);
   font-weight: var(--fw-medium);
 
@@ -37,7 +37,7 @@
   gap: 0.5rem;
 
 
-  padding: 0.6rem 1rem;
+  padding: 1rem 1rem;
   white-space: nowrap;
 }
 
