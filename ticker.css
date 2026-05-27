@@ -1,0 +1,44 @@
+.ticker-tape-container {
+  width: 100%;
+}
+
+.ticker-tape {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #f1f1f1;
+  padding: 12px 0;
+}
+
+.ticker-tape__track {
+  display: flex;
+  width: max-content;
+  animation: tickerScroll 12s linear infinite;
+}
+
+.ticker-tape__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 40px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.ticker-tape__item img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+@keyframes tickerScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
