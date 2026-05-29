@@ -50,8 +50,8 @@
     --fs-m-h4: clamp(20px, 4.5vw, 24px);
     --fs-m-running-h: clamp(18px, 4vw, 20px);
     --fs-m-p: clamp(16px, 3.8vw, 18px);
-    --fs-m-small: clamp(14px, 3.4vw, 16px);
-    --fs-m-tiny: clamp(13px, 3.2vw, 14px);
+    --fs-m-small: clamp(13px, 3.2vw, 16px);
+    --fs-m-tiny: clamp(10px, 2.6vw, 14px);
 
   /* line heights */
   --lh-h1: 1.1;
@@ -265,9 +265,8 @@ header {
     .footer-placeholder {
     padding: 0; /* reduce padding for mobile */
     }
-    
+
    .footer-container {
-    flex-direction: column;
     text-align: center;
     padding:0; /* reduce padding for mobile */
   }
