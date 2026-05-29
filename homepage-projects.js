@@ -1,7 +1,7 @@
 const projects = [
   
        {
-    title: "HIGHLAND ENVIRONMENTAL ANALYTICS",
+    title: "Highland Environmental Analytics",
     category: "BRAND IDENTITY",
     image: "/design/photos/hea/brand_hea.jpg",
     size: "half",

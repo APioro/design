@@ -230,6 +230,8 @@ header {
   min-height: 120px;
   padding: 1rem 2rem;
   background-color: #fcfcf9;
+    
+  overflow: hidden; /* optional safety net */
 }
 
 /* left and right images */
@@ -258,6 +260,36 @@ header {
   color: inherit;
 }
 
+@media (max-width: 768px) {
+
+    .footer-placeholder {
+    padding: 0; /* reduce padding for mobile */
+    }
+    
+   .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding:0; /* reduce padding for mobile */
+  }
+
+  .footer-img {
+    max-height: 300px; /* smaller images for mobile */
+  }
+
+  .footer-text {
+    max-width: 100px;
+    }
+    
+    .footer-text p {
+    font-size: var(--fs-m-tiny);
+    }
+
+        
+    .footer-text h4 {
+    font-size: var(--fs-m-small);
+
+    }
+}
 
 #navbar {
     
