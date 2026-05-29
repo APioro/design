@@ -883,6 +883,14 @@ section {
     .grid-item.half {
         grid-column: span 1;         /* full width of single column */
     }
+
+    .grid-item.text-box {
+    min-height: 40px;
+    margin-bottom: 2em;
+    justify-content: flex-start;
+    font-size: 1rem;
+    line-height: 1.6;
+}
 }
 
 .project-title{
