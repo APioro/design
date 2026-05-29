@@ -216,8 +216,6 @@ header {
     display: flex;
 
     background-color: #fcfcf9;
-
-    padding: 1rem 2rem;
     padding-right: 0;
 }
 
@@ -248,7 +246,7 @@ header {
 }
 
 /* text styling */
-.footer-text {
+.footer-content h4,{
   font-family: var(--font-primary);
   font-size: var(--fs-p);
   line-height: var(--lh-p);
@@ -256,7 +254,7 @@ header {
   color: #1a1a1a;
 }
 
-.footer-text a {
+.footer-content a {
   color: inherit;
 }
 
@@ -275,18 +273,14 @@ header {
     max-height: 300px; /* smaller images for mobile */
   }
 
-  .footer-text {
+  .footer-content h4 {
     max-width: 100px;
+    font-size: var(--fs-m-small);
+    margin: 0 auto; /* center the text */
     }
     
-    .footer-text p {
+    .footer-content p {
     font-size: var(--fs-m-tiny);
-    }
-
-        
-    .footer-text h4 {
-    font-size: var(--fs-m-small);
-
     }
 }
 
