@@ -266,6 +266,7 @@ header {
     }
 
    .footer-container {
+    position: relative;
     text-align: center;
     padding:0; /* reduce padding for mobile */
   }
@@ -286,7 +287,6 @@ header {
   }
 
   .footer-content h4 {
-    max-width: 100px;
     font-size: var(--fs-m-small);
     margin: 0 auto; /* center the text */
     }
