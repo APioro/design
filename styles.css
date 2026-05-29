@@ -263,7 +263,7 @@ header {
 @media (max-width: 768px) {
 
     .footer-placeholder {
-    padding: 0; /* reduce padding for mobile */
+    padding: 0px; /* reduce padding for mobile */
     }
 
    .footer-container {
