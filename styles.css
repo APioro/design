@@ -367,11 +367,11 @@ header {
 .nav-list li a.active {
     font-weight: bold;           
     pointer-events: none;      
-    color: #996211;             
+    color: #7779fa;             
 }
 
 .nav-list li a:hover {
-    color: #996211;
+    color: #7779fa;
 }
 
 .nav-list ul{
@@ -435,7 +435,7 @@ body.page-contact #navbar .nav-list li a :hover{
 
 .button-primary:hover,
 .button-primary:focus{
-    background: #705B06;
+    background: #7779fa;
     color: #dfdbd3;
     border: 1.4px solid #dfdbd3;
 
