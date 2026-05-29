@@ -246,7 +246,7 @@ header {
 }
 
 /* text styling */
-.footer-content h4,{
+.footer-content h4{
   font-family: var(--font-primary);
   font-size: var(--fs-p);
   line-height: var(--lh-p);
@@ -261,6 +261,7 @@ header {
 @media (max-width: 768px) {
 
     .footer-placeholder {
+    position: relative;
     padding: 0px; /* reduce padding for mobile */
     }
 
@@ -271,6 +272,17 @@ header {
 
   .footer-img {
     max-height: 300px; /* smaller images for mobile */
+  }
+  .footer-content {
+      position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+        z-index: 2;
   }
 
   .footer-content h4 {
