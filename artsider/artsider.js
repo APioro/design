@@ -3,7 +3,7 @@ const projects = [
  
 
     
-         {
+{
         type: "image",
         image: "/design/photos/artsider/artsider_phone.jpg", // Original image path
         size: "half",
