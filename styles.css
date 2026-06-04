@@ -869,7 +869,6 @@ section {
 }
 
 .grid-item.text-box {
-    min-height: 300px;      /* ensures tall enough */
     margin-bottom: 18em;    /* spacing below */
     justify-content: flex-start;
     font-size: 1rem;
