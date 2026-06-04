@@ -4,49 +4,51 @@ const projects = [
 
     
          {
+        type: "image",
         image: "/design/photos/artsider/artsider_phone.jpg", // Original image path
         size: "half",
     },
 
       
-  {
+  {     type: "image",
         image: "/design/photos/artsider/artsider_cards.jpg", // Original image path
         size: "half",
     },
   
   
 
-    {
+    {   type: "image",
         image: "/design/photos/artsider/artsider_website.jpg",
         size: "large", 
     },
 
 
-     {
+     {  type: "image",
         image: "/design/photos/artsider/color.jpg", // Original image path
         size: "half",
     },
 
 
 
-   {
+   {    type: "image",
         image: "/design/photos/artsider/artsider.gif", // Original image path
         size: "half",  
 
     },
 
-    {
+    {   type: "image",
         image: "/design/photos/artsider/logo_project.jpg",
         size: "large", 
     },
 
 
-    {
+    {   type: "image",
         image: "/design/photos/artsider/artsider_socialmedia.jpg",
         size: "large", 
     },
 
         {
+        type: "image",
         image: "/design/photos/artsider/logo_rational.jpg",
         size: "large", 
     },
