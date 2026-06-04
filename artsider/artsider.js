@@ -72,6 +72,24 @@ function observeTiles() {
     items.forEach(item => observer.observe(item));
 }
 
+// Function to create and append tiles
+function observeTiles() {
+    const items = document.querySelectorAll(".grid-item");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // animate once
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    items.forEach(item => observer.observe(item));
+}
+
 function createTiles() {
     const gridContainer = document.getElementById("grid-container");
 
