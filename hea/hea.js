@@ -5,17 +5,6 @@ const projects = [
         image: "/design/photos/hea/hea_big.jpg",
         size: "large",
     },
-    {   type: "text",
-        content: "<p>LOGO DESIGN</p>",
-        size: "half",
-    },
-    {   type: "text",
-        content:  `
-        <p>The logo needed to feel stable and analytical. While many environmental labs rely on illustrative leaves or nature motifs, 
-        I wanted to avoid the cliché. Instead, I drew inspiration from the visual patterns found in environmental analysis — lines, grids, and intersections
-         reminiscent of spectroscopy and chromatography. To warm up the brand image, I incorporated a graphical bird in place of the letter "A".</p>`,
-        size: "half",
-    },
         {
         type: "image",
         image: "/design/photos/hea/hea_front.jpg",
@@ -31,7 +20,7 @@ const projects = [
 
     {
         type: "text",
-        content: "VISUAL IDENTITY",
+        content: "LOGO DESIGN",
         size: "half",
     },
     {
@@ -59,18 +48,26 @@ const projects = [
         size: "large",
     },
 
-        {
+    {
         type: "text",
         content: "VISUAL IDENTITY",
         size: "half",
     },
     {
         type: "text",
-        content: `<p>The logo needed to feel stable and analytical. While many environmental labs rely on illustrative leaves or nature motifs, 
-        I wanted to avoid the cliché. Instead, I drew inspiration from the visual patterns found in environmental analysis — lines, grids, and intersections
-         reminiscent of spectroscopy and chromatography. To warm up the brand image, I incorporated a graphical bird in place of the letter "A".</p>`,
+        content: `<p> The goal was to create a visual identity that blended a scientific rigor with organic feel that hints at ecological themes.
+        Since the logo was leaning a bit more toward a sterile laboratory brand, I used color pallete to inject warmth and personality into the system. 
+        The deep green and muted teals evoke a sense of nature and sustainability, while the pops of lime add energy and modernity. 
+        <br><br>
+
+        Kanit's geometry echo the mark's construction, while the rounded corners sofen the overall look. 
+        It complemented the logo's precise lines while maintaining a friendly and approachable tone, which was important for a brand that wanted to feel both credible and accessible.
+        <br><br>
+
+        The imagery was focuses on natural materials, close-up textures and vast landscapes of the highlandic region.</p>`,
         size: "half",
     },
+       
 
     {
         type: "image",
@@ -96,14 +93,13 @@ const projects = [
 
         {
         type: "text",
-        content: "VISUAL IDENTITY",
+        content: "WEBSITE",
         size: "half",
     },
     {
         type: "text",
-        content: `<p>The logo needed to feel stable and analytical. While many environmental labs rely on illustrative leaves or nature motifs, 
-        I wanted to avoid the cliché. Instead, I drew inspiration from the visual patterns found in environmental analysis — lines, grids, and intersections
-         reminiscent of spectroscopy and chromatography. To warm up the brand image, I incorporated a graphical bird in place of the letter "A".</p>`,
+        content: `<p>From there, the identity was carried into the website designed in Framer. 
+        Sharp corners and clean UI components reinforce the brand's precise character, while restrained animations add a sense of movement and vitality.</p>`,
         size: "half",
     },
 
@@ -112,13 +108,6 @@ const projects = [
         src: "/design/photos/hea/web_hea.mp4",
         size: "half",
     },
-
-    // {
-    //     type: "image",
-    //     image: "/design/photos/hea/hea_papers_large.jpg",
-    //     size: "large",
-    // },
-    
 
     // You can add more images or text blocks anywhere
 ];
