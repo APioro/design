@@ -12,13 +12,17 @@ const projects = [
 
     {
         type: "text",
-        subtitle: "Identifying core problems",
-        description: "I was given full freedom to decide the project’s focus, so I began by evaluating the existing webshop using heuristic analysis and quick user feedback sessions. The most critical issues emerged around navigation and product discovery, clarity of product information and purchase model, and overall brand coherence. These became the main areas I prioritized for redesign.",
+        content: {
+            subtitle: "Identifying core problems",
+            description: "I was given full freedom to decide the project's focus, so I began by evaluating the existing webshop using heuristic analysis and quick user feedback sessions. The most critical issues emerged around navigation and product discovery, clarity of product information and purchase model, and overall brand coherence. These became the main areas I prioritized for redesign.",
+        },
     },
     {
         type: "text",
-        subtitle: "Navigation",
-        description: "The original mobile navigation felt cluttered and inconsistent, mixing articles, blog posts, and products under unclear labels. I reduced the number of categories to four to create a more focused structure with fewer distractions. This helped users quickly understand where to go and made the browsing experience feel calmer and more intentional.",
+        content: {
+            subtitle: "Navigation",
+            description: "The original mobile navigation felt cluttered and inconsistent, mixing articles, blog posts, and products under unclear labels. I reduced the number of categories to four to create a more focused structure with fewer distractions. This helped users quickly understand where to go and made the browsing experience feel calmer and more intentional.",
+        },
     },
 
     {
@@ -34,13 +38,17 @@ const projects = [
 
     {
         type: "text",
-        subtitle: "Product showcase & pricing",
-        description: "I added lifestyle previews to show the product in action and encourage clicks. A clickable rating next to the title directs users to reviews faster. I clarified pricing by showing cost per sachet, and made the total order cost, any gift offers, and delivery details very prominent — reducing surprises and building trust.",
+        content: {
+            subtitle: "Product showcase & pricing",
+            description: "I added lifestyle previews to show the product in action and encourage clicks. A clickable rating next to the title directs users to reviews faster. I clarified pricing by showing cost per sachet, and made the total order cost, any gift offers, and delivery details very prominent — reducing surprises and building trust.",
+        },
     },
     {
         type: "text",
-        subtitle: "Information Hierarchy",
-        description: "The challenge was that the site had a lot of content but it was overwhelming. I reorganized it based on user expectations, added bullet points for scanning, and built clearer visual hierarchy with infographics and grouped information.",
+        content: {
+            subtitle: "Information Hierarchy",
+            description: "The challenge was that the site had a lot of content but it was overwhelming. I reorganized it based on user expectations, added bullet points for scanning, and built clearer visual hierarchy with infographics and grouped information.",
+        },
     },
 
     {
@@ -56,13 +64,17 @@ const projects = [
 
     {
         type: "text",
-        subtitle: "Brand consistency",
-        description: "I unified the visual language by standardising colour, typography and UI components to create a more coherent and premium feel.",
+        content: {
+            subtitle: "Brand consistency",
+            description: "I unified the visual language by standardising colour, typography and UI components to create a more coherent and premium feel.",
+        },
     },
     {
         type: "text",
-        subtitle: "Final outcome",
-        description: "Refining an existing content-rich brand requires balancing clarity, consistency and engagement while preserving existing assets.",
+        content: {
+            subtitle: "Final outcome",
+            description: "Refining an existing content-rich brand requires balancing clarity, consistency and engagement while preserving existing assets.",
+        },
     },
 ];
 
@@ -112,7 +124,12 @@ function createTiles() {
 
         } else if (project.type === "text") {
             gridItem.classList.add("text-box");
-            gridItem.innerHTML = project.content;
+            const subtitle = document.createElement("h3");
+            subtitle.textContent = project.content.subtitle;
+            const description = document.createElement("p");
+            description.textContent = project.content.description;
+            gridItem.appendChild(subtitle);
+            gridItem.appendChild(description);
         }
 
         gridContainer.appendChild(gridItem);
