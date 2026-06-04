@@ -5,8 +5,8 @@ const projects = [
         size: "half",
     },
     {
-        type: "image",
-        image: "/design/photos/absolute-collagen/ac-nav.mp4",
+        type: "video",
+        src: "/design/photos/absolute-collagen/ac-nav.mp4",
         size: "half",
     },
 
