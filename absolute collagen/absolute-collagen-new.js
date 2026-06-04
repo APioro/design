@@ -68,70 +68,7 @@ const projects = [
 
 // -------------------- CREATE TILES --------------------
 
-function createTiles() {
-    const gridContainer = document.getElementById("grid-container");
-
-    projects.forEach(project => {
-
-        const gridItem = document.createElement("div");
-        gridItem.classList.add("grid-item");
-        if (project.size) gridItem.classList.add(project.size);
-
-        // ---------------- MEDIA ----------------
-        if (project.type === "media") {
-
-            const isVideo = project.image.endsWith(".mp4");
-            let media;
-
-            if (isVideo) {
-                media = document.createElement("video");
-                media.src = project.image;
-                media.autoplay = true;
-                media.loop = true;
-                media.muted = true;
-                media.playsInline = true;
-            } else {
-                media = document.createElement("img");
-                media.src = project.image;
-                media.loading = "lazy";
-                media.alt = "";
-            }
-
-            media.style.width = "100%";
-            media.style.height = "100%";
-            media.style.objectFit = "cover";
-
-            gridItem.appendChild(media);
-        }
-
-        // ---------------- TEXT ----------------
-        else if (project.type === "text") {
-
-            const wrapper = document.createElement("div");
-            wrapper.classList.add("project-text-wrapper");
-
-            if (project.subtitle) {
-                const h = document.createElement("h4");
-                h.classList.add("project-subtitle");
-                h.textContent = project.subtitle;
-                wrapper.appendChild(h);
-            }
-
-            if (project.description) {
-                const p = document.createElement("p");
-                p.textContent = project.description;
-                wrapper.appendChild(p);
-            }
-
-            gridItem.appendChild(wrapper);
-        }
-
-        gridContainer.appendChild(gridItem);
-    });
-}
-
-// -------------------- OBSERVER --------------------
-
+// Function to create and append tiles
 function observeTiles() {
     const items = document.querySelectorAll(".grid-item");
 
@@ -139,7 +76,7 @@ function observeTiles() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
+                observer.unobserve(entry.target); // animate once
             }
         });
     }, {
@@ -149,12 +86,39 @@ function observeTiles() {
     items.forEach(item => observer.observe(item));
 }
 
-// -------------------- INIT (IMPORTANT FIX) --------------------
+function createTiles() {
+    const gridContainer = document.getElementById("grid-container");
 
-document.addEventListener("DOMContentLoaded", () => {
-    createTiles();
+    projects.forEach(project => {
+        const gridItem = document.createElement("div");
+        gridItem.classList.add("grid-item", project.size);
 
-    requestAnimationFrame(() => {
-        observeTiles();
+        if (project.type === "image") {
+            const img = document.createElement("img");
+            img.src = project.image;
+            img.loading = "lazy";
+            gridItem.appendChild(img);
+
+        } else if (project.type === "video") {
+            const video = document.createElement("video");
+
+            video.src = project.src;
+            video.autoplay = true;
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+
+            gridItem.appendChild(video);
+
+        } else if (project.type === "text") {
+            gridItem.classList.add("text-box");
+            gridItem.innerHTML = project.content;
+        }
+
+        gridContainer.appendChild(gridItem);
     });
-});
+}
+
+// Call the function
+createTiles();
+observeTiles();
