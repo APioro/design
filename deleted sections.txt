@@ -94,15 +94,3 @@ that went to index.html line 94
     </div>
   </div>
 
-</section>
-
-    <div id="footer-placeholder"></div>
-    
-    <script>const faqItems = document.querySelectorAll('.faq-item');
-
-faqItems.forEach(item => {
-  const question = item.querySelector('.faq-question');
-  question.addEventListener('click', () => {
-    item.classList.toggle('active');
-  });
-});
