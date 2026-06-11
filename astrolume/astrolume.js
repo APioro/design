@@ -19,7 +19,7 @@ const projects = [
     },
 
   {type: "text",
-    content: "A star shinning over a cube (which brings to mind a building to some) forms an abstract letter A. The thin lines and geometric shapes evoke a sense of scientific precision, while the star adds a touch of wonder and magic. The logo is designed to be simple and versatile, working well across a range of applications.",
+    content: "<p>A star shinning over a cube (which brings to mind a building to some) forms an abstract letter A. The thin lines and geometric shapes evoke a sense of scientific precision, while the star adds a touch of wonder and magic. The logo is designed to be simple and versatile, working well across a range of applications.</p>",
     size: "half",
   },
 
@@ -42,7 +42,7 @@ const projects = [
     },
 
   {type: "text",
-    content: "The visual language balances restraint with emotion: bold, expressive graphics are paired with subtle scientific accents to ground the brand in credibility. This approach avoids associations with astrology, while still evoking the sense of wonder and awe that define the experience of observing the night sky. The result is a system that feels both poetic and rigorous—inviting curiosity without sacrificing scientific integrity. ",
+    content: "<p>The visual language balances restraint with emotion: bold, expressive graphics are paired with subtle scientific accents to ground the brand in credibility. This approach avoids associations with astrology, while still evoking the sense of wonder and awe that define the experience of observing the night sky. The result is a system that feels both poetic and rigorous—inviting curiosity without sacrificing scientific integrity. </p>",
     size: "half",
   },
   {
