@@ -91,7 +91,7 @@ const projects = [
         size: "half",
     },
 
-        {
+    {
         type: "text",
         content: "WEBSITE",
         size: "half",
