@@ -699,6 +699,13 @@ section {
   margin-bottom: 8rem;
 }
 
+@media (max-width: 768px) {
+  .full-width-img img {
+    height: 40vh;
+    margin-bottom: 4rem;
+  }
+}
+
 .project-header {
     display: flex;
     flex-direction: column;
