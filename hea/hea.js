@@ -6,8 +6,8 @@ const projects = [
         size: "large",
     },
         {
-        type: "image",
-        image: "/design/photos/hea/hea_front.jpg",
+        type: "video",
+        src: "/design/photos/hea/hea.mp4",
         size: "half",
     },
 
