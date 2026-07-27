@@ -5,12 +5,11 @@ const projects = [
     image: "/design/photos/astrolume/logo-balck-astro.jpg",
     size: "half",
   },
-  {
-    type: "image",
-    image: "/design/photos/astrolume/notepad-astro.jpg",
-    size: "half",
-  },
-
+    {
+        type: "video",
+        src: "/design/photos/astrolume/astro.mp4",
+        size: "half",
+    },
     
     {
       type: "text",
