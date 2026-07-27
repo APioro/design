@@ -95,6 +95,7 @@ function createTiles() {
             video.muted = true;
             video.loop = true;
             video.playsInline = true;
+            video.type = "video/mp4";
 
             gridItem.appendChild(video);
 
