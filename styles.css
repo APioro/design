@@ -396,9 +396,7 @@ body.page-contact #navbar .nav-list li a :hover{
 .button-wrapper {
     display: flex;
     justify-content: center; 
-
-    margin: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 6rem;
 }
 .button-primary {
 
@@ -424,7 +422,7 @@ body.page-contact #navbar .nav-list li a :hover{
   -webkit-user-select: none;
   touch-action: manipulation;
   width: auto;
-  margin-top: 2.4rem;
+
 
 }
 
