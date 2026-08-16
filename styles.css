@@ -221,7 +221,6 @@ header {
 
 /* container holds everything */
 .footer-container {
-  display: flex;
   align-items: center;          /* vertical centering */
   justify-content: space-between;
   width: 100%;
