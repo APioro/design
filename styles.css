@@ -224,10 +224,6 @@ header {
   align-items: center;          /* vertical centering */
   justify-content: space-between;
   width: 100%;
-  min-height: 120px;
-  padding: 1rem 2rem;
-  background-color: #fcfcf9;
-    
   overflow: hidden; /* optional safety net */
 }
 
