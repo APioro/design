@@ -22,7 +22,16 @@ const projects = [
     size: "half",
   },
 
-
+    {
+      type: "image",
+      image: "/design/photos/astrolume/brand-astro.jpg",
+      size: "large",
+    },
+  {
+    type: "image",
+    image: "/design/photos/astrolume/colors-astro.jpg",
+    size: "half",
+  },
   {
     type: "image",
     image: "/design/photos/astrolume/chain-astro.jpg",
