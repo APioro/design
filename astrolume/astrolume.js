@@ -24,7 +24,7 @@ const projects = [
 
     {
       type: "image",
-      image: "/design/photos/astrolume/brand-astro.jpg",
+      image: "/design/photos/astrolume/brand-system-astro.jpg",
       size: "large",
     },
   {
