@@ -57,6 +57,11 @@ const projects = [
     content: "<p>The visual language balances restraint with emotion: bold, expressive graphics are paired with subtle scientific accents to ground the brand in credibility. This approach avoids associations with astrology, while still evoking the sense of wonder and awe that define the experience of observing the night sky. The result is a system that feels both poetic and rigorous—inviting curiosity without sacrificing scientific integrity. </p>",
     size: "half",
   },
+  {
+    type: "image",
+    image: "/design/photos/astrolume/banner.jpg",
+    size: "large",
+  },
 
   {
     type: "image",
