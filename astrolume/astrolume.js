@@ -40,6 +40,12 @@ const projects = [
     size: "half",
   },
 
+  {
+    type: "image",
+    image: "/design/photos/astrolume/banner.jpg",
+    size: "half",
+  },
+
     
     {
       type: "text",
