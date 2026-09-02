@@ -22,11 +22,11 @@ const projects = [
     size: "half",
   },
 
-    {
-      type: "image",
-      image: "/design/photos/astrolume/brand-system-astro.jpg",
-      size: "large",
-    },
+    // {
+    //   type: "image",
+    //   image: "/design/photos/astrolume/brand-system-astro.jpg",
+    //   size: "large",
+    // },
 
   {
     type: "image",
