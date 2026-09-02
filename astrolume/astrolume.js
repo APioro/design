@@ -43,7 +43,7 @@ const projects = [
   {
     type: "image",
     image: "/design/photos/astrolume/banner.jpg",
-    size: "half",
+    size: "large",
   },
 
     
