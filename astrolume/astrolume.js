@@ -54,8 +54,7 @@ const projects = [
     type: "image",
     image: "/design/photos/astrolume/colors-astro.jpg",
     size: "half",
-  }
-
+  },
     {
     type: "image",
     image: "/design/photos/astrolume/posters.jpg",
@@ -65,11 +64,8 @@ const projects = [
     type: "image",
     image: "/design/photos/astrolume/tshirt.jpg",
     size: "half",
-  }
+  },
 
-
-
-    
   {
     type: "text",
     content: "VISUAL IDENTITY",
