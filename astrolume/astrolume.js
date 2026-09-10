@@ -18,7 +18,7 @@ const projects = [
     },
 
   {type: "text",
-    content: "<p>A star shinning over a cube (which brings to mind a building to some) forms an abstract letter A. The thin lines and geometric shapes evoke a sense of scientific precision, while the star adds a touch of wonder and magic. The logo is designed to be simple and versatile, working well across a range of applications.</p>",
+    content: "<p>The logo needed to represent both wonder and scientific precision. A star shinning over a cube forms an abstract letter A. The thin lines inspired by equatorial grids and lines found on the sky map are utilised as an asset across different touchpoints. They give it that sense of scientificness.</p>",
     size: "half",
   },
 
@@ -30,54 +30,35 @@ const projects = [
 
   {
     type: "image",
-    image: "/design/photos/astrolume/typography.jpg",
+    image: "/design/photos/astrolume/banner.jpg",
+    size: "large",
+  },
+  {
+    type: "image",
+    image: "/design/photos/typography.jpg",
     size: "half",
   },
 
     {
+    type: "image",
+    image: "/design/photos/astrolume/mag.jpg",
+    size: "half",
+  },
+
+  {
+    type: "image",
+    image: "/design/photos/astrolume/ui.jpg",
+    size: "half",
+  },
+  {
     type: "image",
     image: "/design/photos/astrolume/colors-astro.jpg",
     size: "half",
-  },
-
-  {
-    type: "image",
-    image: "/design/photos/astrolume/banner.jpg",
-    size: "large",
-  },
-
-    
-    {
-      type: "text",
-      content: "VISUAL IDENTITY",
-      size: "half",
-    },
-
-  {type: "text",
-    content: "<p>The visual language balances restraint with emotion: bold, expressive graphics are paired with subtle scientific accents to ground the brand in credibility. This approach avoids associations with astrology, while still evoking the sense of wonder and awe that define the experience of observing the night sky. The result is a system that feels both poetic and rigorous—inviting curiosity without sacrificing scientific integrity. </p>",
-    size: "half",
-  },
-  {
-    type: "image",
-    image: "/design/photos/astrolume/banner.jpg",
-    size: "large",
-  },
-
-  {
-    type: "image",
-    image: "/design/photos/astrolume/d.jpg",
-    size: "half",
-  },
+  }
 
     {
     type: "image",
-    image: "/design/photos/astrolume/chain-astro.jpg",
-    size: "half",
-  },
-
-  {
-    type: "image",
-    image: "/design/photos/astrolume/cxc.jpg",
+    image: "/design/photos/astrolume/posters.jpg",
     size: "half",
   },
   {
@@ -85,6 +66,37 @@ const projects = [
     image: "/design/photos/astrolume/tshirt.jpg",
     size: "half",
   }
+
+
+
+    
+  {
+    type: "text",
+    content: "VISUAL IDENTITY",
+    size: "half",
+  },
+
+  {type: "text",
+    content: "<p>The visual identity had to balance inspiring visuals while highlighting the brand's scientific nature. This is not an astrological concept, neither it is a strictly hard-science tech brand. The imagery had to inspire, while not driffting too much into either lifestyle or litterarly showing the night sky. The color palette is a mix of deep blues and purples, with a heavy use of black and off-white. The typography is clean and modern, with a focus on readability and slightly technical touch of all-caps for more information-based pieces (thinking about UI and infographics here).</p>",
+    size: "half",
+  },
+
+
+
+    {
+    type: "image",
+    image: "/design/photos/astrolume/cxc.jpg",
+    size: "half",
+  },
+
+  
+    {
+    type: "image",
+    image: "/design/photos/astrolume/crad.jpg",
+    size: "half",
+  },
+
+  
 ];
 
 // Function to create and append tiles
