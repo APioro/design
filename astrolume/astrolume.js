@@ -35,7 +35,7 @@ const projects = [
   },
   {
     type: "image",
-    image: "/design/photos/typography.jpg",
+    image: "/design/photos/astrolume/typography.jpg",
     size: "half",
   },
 
@@ -88,7 +88,7 @@ const projects = [
   
     {
     type: "image",
-    image: "/design/photos/astrolume/crad.jpg",
+    image: "/design/photos/astrolume/crad-astro.jpg",
     size: "half",
   },
 
