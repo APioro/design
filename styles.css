@@ -500,7 +500,6 @@ body.page-contact #navbar .nav-list li a :hover{
 @media (max-width: 768px) {
     .header-wrapper{
         display: flex;
-        height: 36vh;
         /* flex-direction:row; */
         justify-items:flex-end;
         padding-left: 1rem;
