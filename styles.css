@@ -549,11 +549,7 @@ body.page-contact #navbar .nav-list li a :hover{
 }
 
 .title {
-    line-height: 5*1.2rem;
-    font-size: 5rem;
-    font-weight: bold;
-    padding-bottom: 0rem;
-    padding-top:3rem;
+    margin-bottom: 0.6rem;
 }
 
 .title.white {
@@ -561,8 +557,7 @@ body.page-contact #navbar .nav-list li a :hover{
 }
 
 .subheader {
-    font-size: 1.2rem;
-    padding-bottom: 0rem;
+    font-family: var(--font-primary);
     padding-top: 0.6rem;
     max-width: 60ch;
 }
