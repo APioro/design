@@ -35,7 +35,7 @@
   --font-secondary: 'AzeretMono', monospace;
 
   /* font sizes*/
-  --fs-h1: clamp(72px, 5.3vw, 260px);   /* main page titles, scales for HD → 4K */
+  --fs-h1: clamp(72px, 12vw, 192px);  /* main page titles, scales for HD → 4K */
   --fs-h2: clamp(48px, 3.2vw, 130px); /* major sections */
   --fs-h3: clamp(36px, 2vw, 74px);  /* subsection headings */
   --fs-h4: clamp(24px, 1.6vw, 48px);  /* minor headings */
