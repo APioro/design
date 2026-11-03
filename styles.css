@@ -550,6 +550,13 @@ body.page-contact #navbar .nav-list li a :hover{
     margin-bottom: 2.2rem;
 }
 
+@media (max-width: 768px) {
+    .title {
+        margin-bottom: 1.2rem;
+    }
+   
+}
+
 .title.white {
   color: rgb(255, 255, 255);
 }
