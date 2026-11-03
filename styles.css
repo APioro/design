@@ -35,7 +35,7 @@
   --font-secondary: 'AzeretMono', monospace;
 
   /* font sizes*/
-  --fs-h1: clamp(72px, 12vw, 192px);  /* main page titles, scales for HD → 4K */
+  --fs-h1: clamp(72px, 9vw, 180px);  /* main page titles, scales for HD → 4K */
   --fs-h2: clamp(48px, 3.2vw, 130px); /* major sections */
   --fs-h3: clamp(36px, 2vw, 74px);  /* subsection headings */
   --fs-h4: clamp(24px, 1.6vw, 48px);  /* minor headings */
@@ -86,10 +86,10 @@ h1, h2, h3, h4 {
 }
 
 
-h1 { font-size: var(--fs-h1); line-height: var(--lh-h1); font-weight: var(--fw-bold);  letter-spacing: calc(-0.03em - 0.001vw); margin: 0;}
+h1 { font-size: var(--fs-h1); line-height: var(--lh-h1); font-weight: var(--fw-medium);  letter-spacing: calc(-0.03em - 0.001vw); margin: 0;}
 h2 { font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: var(--fw-medium); letter-spacing: calc(-0.02em - 0.001vw); margin-bottom: 1.4rem;} 
 h3 { font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: var(--fw-medium); letter-spacing: calc(-0.04em - 0.001vw)}
-h4 { font-size: var(--fs-h4); line-height: var(--lh-h4); font-weight: var(--fw-medium); }
+h4 { font-size: var(--fs-h4); line-height: var(--lh-h4); font-weight: var(--fw-regular); }
 
 
 p {
@@ -562,9 +562,9 @@ body.page-contact #navbar .nav-list li a :hover{
 
 .subheader {
     font-size: 1.2rem;
-    font-weight: bold;
     padding-bottom: 0rem;
     padding-top: 0.6rem;
+    max-width: 60ch;
 }
 
 .badge{
@@ -603,6 +603,16 @@ body.page-contact #navbar .nav-list li a :hover{
     }
    
 }
+
+
+.running-header-mono{
+
+    font-family: var(--font-secondary);
+    font-size: var(--fs-p);
+    color:#f0f0f0;
+    text-transform: uppercase;
+}
+
 
 /*for js lightbox(large image ) effect */
 
