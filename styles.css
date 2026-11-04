@@ -108,7 +108,7 @@ small {
   line-height: var(--lh-small);
 }
 
-running-h.{font-family: var(--font-secondary); font-size: var(--fs-running-h); line-height: var(--lh-h4); font-weight: var(--fw-medium); }
+running-h{font-family: var(--font-secondary); font-size: var(--fs-running-h); line-height: var(--lh-h4); font-weight: var(--fw-medium); }
 .tiny{font-family: var(--font-secondary); font-size: var(--fs-tiny); line-height: var(--lh-tiny); font-weight: var(--fw-medium);}
 
 .dark-section {
