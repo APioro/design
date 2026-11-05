@@ -908,9 +908,18 @@ section {
     border-radius: 0px; /* Rounded corners */
     transition: transform 0.3s;
     background-color: transparent; /* Placeholder background */
-    
+   
+    visibility: hidden; /* Start hidden for animation */
     
 }
+
+.visible.homepage-grid-item {
+    visibility: visible; /* Make visible when in viewport */
+    opacity: 1;
+    transform: translateY(20);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
 
 .homepage-grid-item img {
     width: 100%;
