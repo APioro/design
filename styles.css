@@ -8,14 +8,14 @@
 
 @font-face {
   font-family: "AzeretMono";
-  src: url("/fonts/AzeretMono-Variable.woff2") format("woff2-variations");
+  src: url("/design/fonts/AzeretMono-Variable.woff2") format("woff2-variations");
   font-weight: 100 900; /* or whatever range the font supports */
   font-style: normal;
 }
 
 @font-face {
   font-family: "AzeretMono";
-  src: url("/fonts/AzeretMono-VariableItalic.woff2") format("woff2-variations");
+  src: url("/design/fonts/AzeretMono-VariableItalic.woff2") format("woff2-variations");
   font-weight: 100 900; /* or whatever range the font supports */
   font-style: italic;
 }
