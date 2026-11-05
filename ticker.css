@@ -14,7 +14,7 @@
 .marquee__content {
   font-size: var(--fs-h4);
   font-family: var(--font-secondary);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-light);
 
   color: black;
   flex-shrink: 0;

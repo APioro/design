@@ -522,7 +522,6 @@ body.page-contact #navbar .nav-list li a :hover{
 .title {
   font-family: var(--font-primary);
   font-size: clamp(72px, 9vw, 180px);
-  font-size-adjust: from-font;
 
   margin-bottom: 2.2rem;
   opacity: 0;
