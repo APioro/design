@@ -548,6 +548,13 @@ body.page-contact #navbar .nav-list li a :hover{
 
 .title {
     margin-bottom: 2.2rem;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.title.visible {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {

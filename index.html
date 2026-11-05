@@ -19,20 +19,13 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="icon" href="/design/ogo-for-favicon.ico">
+    <link rel="icon" href="/design/logo-for-favicon.ico">
     <link rel="icon" href="/design/logo/my-logo-black.svg" media="(prefers-color-scheme: light)">
     <link rel="icon" href="/design/logo/my-logo-white.png" media="(prefers-color-scheme: dark)">
    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css">
 
    <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
-    <script>
-    const lenis = new Lenis({
-        autoRaf: true,
-        lerp: 0.1,
-        smoothWheel: true,
-        anchors: true,
-    });
-    </script>
+
 </head>
 <body>
     <div id="navbar"></div>
@@ -106,8 +99,17 @@
     </section>
 
     <div id="footer-placeholder"></div>
+
+    <script>
+    const lenis = new Lenis({
+        autoRaf: true,
+        lerp: 0.1,
+        smoothWheel: true,
+        anchors: true,
+    });
+    </script>
     
-    <script>const faqItems = document.querySelectorAll('.faq-item');
+<!-- <script>const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
   const question = item.querySelector('.faq-question');
@@ -116,11 +118,13 @@ faqItems.forEach(item => {
   });
 });
  
-</script>
+</script> -->
+
     <script src="/design/homepage-projects.js"></script>
     <script src="/design/footer-loader.js"  defer></script>
     <script src="/design/menu-loader.js"  defer></script>
     <script src="/design/ticker.js"  defer></script>
+    <script src="/design/animation.js"  defer></script>
 
 </body>
 </html>
