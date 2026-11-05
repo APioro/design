@@ -469,6 +469,7 @@ body.page-contact #navbar .nav-list li a :hover{
     padding-top: 6rem;
     padding-left: clamp(1rem, 7vw, 9rem);
     padding-right: clamp(1rem, 7vw, 9rem);
+      min-height: 65vh;
 }
 
 @media (max-width: 768px) {
@@ -522,7 +523,7 @@ body.page-contact #navbar .nav-list li a :hover{
 .title {
   font-family: var(--font-primary);
   font-size: clamp(72px, 9vw, 180px);
-  min-height: 65vh;
+
 
   margin-bottom: 2.2rem;
   opacity: 0;
