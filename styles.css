@@ -1,10 +1,10 @@
 /* TYPOGRAPHY SYSTEM */
-
 @font-face {
   font-family: "Switzer";
-  src: url("fonts/Switzer-Variable.ttf");
-  font-weight: 100 900; /* or whatever range the font supports */
+  src: url("/design/fonts/Switzer-Variable.woff2") format("woff2");
+  font-weight: 100 900;
   font-style: normal;
+  font-display: block;
 }
 
 @font-face {
@@ -140,25 +140,7 @@ running-h{font-family: var(--font-secondary); font-size: var(--fs-running-h); li
 
 }
 
-/* Bold BLUU NEXT */
-@font-face {
-  font-family: 'Bluu Next';
-  src: url('/fonts/BluuNext-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;  /* text stays invisible until font loads */
-}
 
-/* Bold Italic */
-@font-face {
-  font-family: 'Bluu Next';
-  src: url('/fonts/BluuNext-Bolditalic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: block;  /* text stays invisible until font loads */
-}
-
-/* Google Font: Urbanist */
 body {
     font-family: var(--font-primary);
     margin: 0;
