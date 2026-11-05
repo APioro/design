@@ -536,6 +536,8 @@ body.page-contact #navbar .nav-list li a :hover{
 @media (max-width: 768px) {
     .title {
         margin-bottom: 1.2rem;
+        font-size: var(--fs-m-h1);
+        font-weight: var(--fw-semibold);
     }
    
 }
@@ -550,22 +552,16 @@ body.page-contact #navbar .nav-list li a :hover{
     max-width: 35ch;
 }
 
-.badge{
-    /* margin-left: auto;      push to right */
-    display: flex;          /* make badge a flex container */
-    /* flex-direction: column; vertical stacking */
-    justify-content: flex-end; /* push image to bottom of badge div */
-    width: 100%;
-  
-}
+
+
 
 @media (max-width: 768px) {
-    .badge {
 
-        display: none;
-        justify-content: center;
-        width: 100%;
+    .subheader {
+
+        max-width: 28ch;
     }
+
    
 }
 
