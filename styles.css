@@ -8,13 +8,6 @@
 }
 
 @font-face {
-  font-family: "Switzer";
-  src: url("fonts/Switzer-VariableItalic.ttf") ;
-  font-weight: 100 900; /* or whatever range the font supports */
-  font-style: italic;
-}
-
-@font-face {
   font-family: "AzeretMono";
   src: url("/fonts/AzeretMono-Variable.woff2") format("woff2-variations");
   font-weight: 100 900; /* or whatever range the font supports */
