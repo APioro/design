@@ -469,7 +469,6 @@ body.page-contact #navbar .nav-list li a :hover{
     padding-top: 6rem;
     padding-left: clamp(1rem, 7vw, 9rem);
     padding-right: clamp(1rem, 7vw, 9rem);
-      min-height: 65vh;
 }
 
 @media (max-width: 768px) {
@@ -523,35 +522,15 @@ body.page-contact #navbar .nav-list li a :hover{
 .title {
   font-family: var(--font-primary);
   font-size: clamp(72px, 9vw, 180px);
-
+  
 
   margin-bottom: 2.2rem;
   opacity: 0;
-
+  transition: opacity 1s ease;
 }
 
 .title.visible {
   opacity: 1;
-}
-
-.running-header-mono,
-.title {
-  animation: reveal 1s ease forwards;
-  animation-delay: 0.3s;
-}
-
-.subheader {
-  animation: reveal 1s ease forwards;
-  animation-delay: 1.2s;
-}
-
-@keyframes reveal {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 768px) {
