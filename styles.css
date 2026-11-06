@@ -900,63 +900,58 @@ section {
     color: #7779fa
 }
 /* Tile Styles for homepage*/
-
+/* TILE REVEAL */
 .homepage-grid-item {
     width: 100%;
     position: relative;
     overflow: hidden;
-    border-radius: 0px; /* Rounded corners */
-    transition: transform 0.3s;
-    background-color: transparent; /* Placeholder background */
-   
+    border-radius: 0;
+    background-color: transparent;
+
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease; visibility: hidden; /* Start hidden for animation */
-    
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.visible.homepage-grid-item {
-  opacity: 1;
-  transform: translateY(0);
+.homepage-grid-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-
-.homepage-grid-item img {
+/* IMAGE AND VIDEO */
+.homepage-grid-item img,
+.homepage-grid-item video {
     width: 100%;
-    height: auto;     /* this keeps the aspect ratio */
-    max-height: 100vh; 
+    height: auto;
     display: block;
-    border-radius: 0px; /* Match the border-radius of the tile */
     object-fit: cover;
     object-position: 50% 50%;
-    
+
+    transition: transform 0.3s ease;
 }
 
-/* Classes for different sizes of items */
+/* HOVER EFFECT */
+.homepage-grid-item:hover img,
+.homepage-grid-item:hover video {
+    transform: scale(1.03);
+}
+
+/* GRID SIZES */
 .homepage-grid-item.large {
-    grid-column: span 2; /* Span 2 columns */
+    grid-column: span 2;
 }
 
 .homepage-grid-item.half {
-    grid-column: span 1; /* Span 1 column */
+    grid-column: span 1;
 }
 
-.homepage-grid-item img,
-.homepage-grid-item video {
-  transition: transform 0.3s ease;
-  will-change: transform;
-}
-
-.homepage-grid-item:hover img,
-.homepage-grid-item:hover video {
-  transform: scale(1.03);
-}
-
+/* PROJECT HEADINGS */
 .homepage-grid-item h2 {
-    font-size: 1.5rem;            /* Size for the title */
-    margin: 10;                    /* Remove default margins */
-    color: #000;                  /* Title color */
+    font-size: 1.5rem;
+    margin: 10px;
+    color: #000;
 }
+
 
 /* meta line */
 .project-meta {

@@ -18,30 +18,6 @@ const projects = [
     theme: "light"
   },
 
-
-   /*
-      {
-    title: "Bowl'd Salad Bar",
-    category: "Branding, Packaging",
-    image: "/design/photos/bowld/asparagus.jpg",
-    size: "half",
-    link: "/design/bowld/bowld.html",
-    theme: "dark" // black text
-  },
-
-
-  
- {
-    title: "Darker Tales ",
-    category: "Editorial, Illustration",
-    image: "/design/darker-tales/table-of-content.png",
-    size: "half",
-    link: "/design/darker-tales/darker-tales.html",
-    theme: "light"
-  },
-  
-  */
- 
   {
     title: "Absolute Collagen",
     category: "UX/UI Design, E-commerce",
@@ -51,18 +27,14 @@ const projects = [
     theme: "dark" // white text
   },
 
-
-
   {
-    title: "Artsider Foundation ",
+    title: "Artsider Foundation",
     category: "BRAND IDENTITY",
     image: "/design/photos/artsider/artsider_cards.jpg",
     size: "half",
     link: "/design/artsider/artsider.html",
     theme: "light"
   },
-  
-
 
 ];
 
