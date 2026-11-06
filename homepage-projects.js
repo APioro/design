@@ -148,6 +148,5 @@ function createTiles() {
 }
 
 // Call the function to create tiles
-observeTiles();
 createTiles();
-
+observeTiles();
