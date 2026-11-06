@@ -69,7 +69,7 @@ const projects = [
   
     // Add more projects as needed...
 function observeTiles() {
-    const items = document.querySelectorAll(".grid-item");
+    const items = document.querySelectorAll(".homepage-grid-item");
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
