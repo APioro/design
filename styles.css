@@ -67,7 +67,7 @@
 
   /*colors for text*/
   --text-on-light: #1a1a1a;
-  --text-on-dark: #F0F0F0;
+  --text-on-dark: #fcfcf9;
 }
 
 h1, h2, h3, h4 {
@@ -104,7 +104,7 @@ running-h{font-family: var(--font-secondary); font-size: var(--fs-running-h); li
 .tiny{font-family: var(--font-secondary); font-size: var(--fs-tiny); line-height: var(--lh-tiny); font-weight: var(--fw-medium);}
 
 .dark-section {
-  background-color: #0A0A0A;
+  background-color: #000;
   color: var(--text-on-dark);
 }
 
